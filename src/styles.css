@@ -210,3 +210,20 @@ footer {
     font-size: 15px;
     background-color:rgb(17, 31, 64);
 }
+
+@media only screen and (max-width: 750px) {
+    .exp {
+        padding: 0px;
+    }
+    .project {
+        padding: 0px;
+    }
+    .education {
+        padding: 0px;
+    }
+    h3 {
+        text-align: center;
+        display:block;
+    }
+  }
+  
