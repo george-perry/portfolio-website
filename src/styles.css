@@ -3,20 +3,6 @@ body {
     margin: 0;
 }
 
-section {
-    background-color: rgb(17, 31, 64);
-    border: solid black .5px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navs {
-    width: 500px;
-}
-
 ul {
     display: flex;
     list-style-type: none;
@@ -25,7 +11,8 @@ ul {
 }
 
 a {
-    color: white;
+    color: rgb(174, 145, 66);
+    text-decoration: none;
 }
 
 li {
@@ -58,6 +45,25 @@ h3 {
 
 p {
     margin: 0;
+}
+
+section {
+    background-color: rgb(12, 35, 64);
+    border: solid black .5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 75px;
+    margin: 15px;
+}
+
+.navs {
+    width: 500px;
 }
 
 .hero {
@@ -114,7 +120,7 @@ p {
 }
 
 .headshot {
-    filter: drop-shadow(0 0 3px rgb(255, 215, 0));
+    filter: drop-shadow(0 0 5px rgb(174, 145, 66));
     border-radius: 8px;
     padding-top: 50px;
     height: 25.5%;
@@ -212,6 +218,9 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
+    .hero-area {
+        padding: 20%, 20%, 20%, 0%;
+    }
     .exp {
         padding: 0px;
     }
@@ -221,9 +230,27 @@ footer {
     .education {
         padding: 0px;
     }
+    h1 {
+        font-size: 60px;
+    }
     h3 {
         text-align: center;
-        display:block;
+        display: block;
+    }
+    
+    .logo {
+        display: none;
+    }
+    .navs {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+
     }
   }
   
+  @media only screen and (max-width: 450px) {
+    .navs {
+        font-size: 14px;
+    }
+  }
